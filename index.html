@@ -1,14 +1,25 @@
 <!DOCTYPE html>
+<meta charset="UTF-8" />
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css"/>
-        <script src="index.js" defer></script>
-        <title>Guessing Game</title>
-    </head>
-    <body>
-        <h1>Guessing Game</h1>
-        <input type="text" />
-        <input type="button" id="btn" value="Guess" />
-        <ul></ul>
-    </body>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <div id="guesses"></div>
+      <h1>Guessing Game</h1>
+      <input type="text" id="textbox" />
+      <div class="functions">
+        <input type="button" class="buttons" id="guessbtn" value="Guess" />
+        <input type="button" class="buttons" id="reset" value="Reset" />
+        <input type="button" class="buttons" id="hint" value="Hint" />
+      </div>
+      <p id="hintNumber"></p>
+      <p id="higherorlower">Guess A Number 1-100</p>
+      <ul></ul>
+    </div>
+  </body>
 </html>
